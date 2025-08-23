@@ -61,7 +61,7 @@ spotify\_recommender/
 ### A) By track name/artist query (most convenient)
 
 ```bash
-python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "shape of you ed sheeran" --top 15
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "shape of you" --top 15
 ```
 
 The script will:
@@ -75,7 +75,7 @@ The script will:
 ### B) By exact `track_id` (if you already know it)
 
 ```bash
-python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id 7qiZfU4dY1lWllzX7mPBI3 --top 10
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id 5cj54CVe4pQZ9cUKgbsZrG --top 10
 ```
 
 ---
@@ -83,7 +83,7 @@ python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id 
 ### C) Multiple seeds (centroid of several songs)
 
 ```bash
-python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --multi-seed-ids 7qiZfU4dY1lWllzX7mPBI3,0tgVpDi06FyKpA1z0VMD4v --top 20
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --multi-seed-ids 5cj54CVe4pQZ9cUKgbsZrG,2yLy4mD9TIHOzHKn3gOhuw --top 20
 ```
 
 ---
