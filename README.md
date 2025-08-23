@@ -34,8 +34,6 @@ spotify\_recommender/
    cd spotify-recommender
 ````
 
-Here’s a polished **README-ready section** based on your points (I formatted it neatly so you can paste directly into your repo):
-
 ````markdown
 ## ⚙️ Setup
 
@@ -63,7 +61,7 @@ Here’s a polished **README-ready section** based on your points (I formatted i
 ### A) By track name/artist query (most convenient)
 
 ```bash
-python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "shape of you ed sheeran" --top 15
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "shape of you ed sheeran" --top 15
 ```
 
 The script will:
@@ -77,7 +75,7 @@ The script will:
 ### B) By exact `track_id` (if you already know it)
 
 ```bash
-python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id 7qiZfU4dY1lWllzX7mPBI3 --top 10
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id 7qiZfU4dY1lWllzX7mPBI3 --top 10
 ```
 
 ---
@@ -85,7 +83,7 @@ python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-id
 ### C) Multiple seeds (centroid of several songs)
 
 ```bash
-python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --multi-seed-ids 7qiZfU4dY1lWllzX7mPBI3,0tgVpDi06FyKpA1z0VMD4v --top 20
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --multi-seed-ids 7qiZfU4dY1lWllzX7mPBI3,0tgVpDi06FyKpA1z0VMD4v --top 20
 ```
 
 ---
@@ -93,7 +91,7 @@ python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --multi-s
 ### D) Faster testing on a subset
 
 ```bash
-python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "arijit singh" --top 10 --subset 50000
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "arijit singh" --top 10 --subset 50000
 ```
 
 ---
@@ -101,7 +99,7 @@ python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-qu
 ### E) Save recommendations to a CSV
 
 ```bash
-python recommender_tomigelo.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "dil diyan gallan" --top 25 --out recs.csv
+python offline_recommender.py --csv SpotifyAudioFeaturesApril2019.csv --seed-query "dil diyan gallan" --top 25 --out recs.csv
 ```
 
 ---
