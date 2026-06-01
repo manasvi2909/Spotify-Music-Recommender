@@ -40,3 +40,6 @@ data/tracks_features.csv
 data/SpotifyAudioFeaturesApril2019.csv
 data/SpotifyAudioFeaturesNov2018.csv
 !data/production_sample.csv
+
+# Jupyter Notebooks / Demos
+SpotifyMusicRecommender_py.ipynb
